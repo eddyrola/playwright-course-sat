@@ -14,7 +14,7 @@ import "dotenv/config"
  */
 export default defineConfig({
   testDir: '.',
-  testMatch: [/test\/.*\.spec\.ts/, /module-.*\/.*\.spec\.txss/],
+  testMatch: [/tests\/.*\.spec\.ts/, /module-.*\/.*\.spec\.txss/],
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
