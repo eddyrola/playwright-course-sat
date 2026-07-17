@@ -44,8 +44,8 @@
 
     "include": [
     "playwright.config.ts",
-    "types/**/*/.ts",
-    "tests/**/*/.ts",
+    "types/**/*.ts",
+    "tests/**/*.ts",
     "module-*/**/*.ts"
   ]
 }
