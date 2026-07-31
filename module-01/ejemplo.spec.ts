@@ -52,7 +52,7 @@ test.describe("Smoke OmniPizza (M01)", () => {
         const pizzaCards = page.locator("[data-testid^='pizza-card-']");
         await expect(pizzaCards.first()).toBeVisible();
         const funghi = await pizzaCards.filter({hasText: "Funghi"}).textContent();
-        const fourCheese = await page.getByRole("heading", {level:3}).filter({hasText: "Cheese"}).innerText();
+        const fourCheese = await page.getByRole("heading", {level:2}).filter({hasText: "Quesos"}).innerText();
         console.log(fourCheese);
         const count = await pizzaCards.count();
         expect(count).toBeGreaterThan(0);
